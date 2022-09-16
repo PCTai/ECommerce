@@ -1,0 +1,76 @@
+
+.overview{
+    margin-top: 80px;
+    
+    &-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-content{
+        color: #fff;
+        width: 45%;
+    }
+    &-content h3{
+        margin-bottom: 20px ;
+        font-size: 24px;
+    }
+    &-content p{
+        color: $desc-color;
+        margin-bottom: 20px;
+    }
+    &-content button a{
+        color: #fff;
+    }
+    &-watch{
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    &-watch img{
+        width: 100%;
+        height: 340px;
+        border-radius: 20px;
+        border: 2px solid $gray-color;
+    }
+    &-watch .circle{
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: rgba($color: rgb(201, 200, 200), $alpha: 0.5); 
+    }
+    &-watch .circle img{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        border: none;
+    }
+
+    &-slide{
+        margin-top: 120px;
+        display: flex;
+        justify-content: center;
+    }
+    .list-slide{
+        width: 200px;
+        height: 8px;
+        display: flex;
+    }
+    .slide-item{
+        flex: 1;
+        height: 8px;
+        background-color: $desc-color;
+        margin: 0 6px;
+        border-radius: 5px;
+    }
+    .slide-item.active{
+        flex: 1.6;
+        background-color: #fff;
+    }
+}

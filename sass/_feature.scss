@@ -1,0 +1,35 @@
+
+.feature{
+    margin-top: 180px;
+    text-align: center;
+    &-title{
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    &-list{
+        display: flex;
+        justify-content: space-around;
+    }
+    &-item{
+        width: 30%;
+        background: #E3E3E3;
+        padding: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 20px;
+    }
+    &-item img{
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    &-item h5{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    &-item p{
+        margin-bottom: 20px;
+    }
+}
