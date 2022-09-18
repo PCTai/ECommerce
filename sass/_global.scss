@@ -3,22 +3,7 @@ body {
     font-family: $font;
     color: $text-color;
     font-weight: 400;
-    background-color: white;
-  }
-  button {
-    cursor: pointer;
-    outline: none;
-    border: none;
-    font-family: $font;
-  }
-  .wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
-  .container {
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 0 15px;
+    background-color: #F5F5F5;
   }
   button {
     cursor: pointer;

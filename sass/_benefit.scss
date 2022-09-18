@@ -1,0 +1,62 @@
+
+.benefit{
+    margin-top: 60px;
+    padding: 40px;
+    &-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-content{
+        color: #000;
+        width: 60%;
+        margin-left: 60px;
+    }
+    &-content h3{
+        margin-bottom: 20px ;
+        font-size: 24px;
+    }
+    &-content p{
+        color: $desc-color;
+        margin-bottom: 20px;
+    }
+    &-content button a{
+        color: #fff;
+    }
+    &-content button {
+        background-color: #000;
+    }
+    &-watch{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    &-watch img{
+        width: 100%;
+        height: 340px;
+        border-radius: 20px;
+        border: 2px solid $gray-color;
+    }
+    &-watch .circle{
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: rgba($color: rgb(201, 200, 200), $alpha: 0.5); 
+    }
+    &-watch .circle img{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        border: none;
+    }
+    &-list{
+        margin-left: 20px;
+        margin-bottom: 16px;
+    }
+}

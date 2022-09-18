@@ -1,0 +1,67 @@
+
+.footer{
+    background-color: #000;
+    margin-top: 60px;
+    &-container{
+        padding: 40px 0;
+        display: flex;
+        justify-content: space-between;
+        color: #fff;
+    }
+    &-social{
+        &-content{
+            margin-top: 40px;
+        }
+        &-list{
+            display: flex;
+
+        }
+        &-list img{
+            margin-top: 16px;
+            margin-right: 16px;
+            
+        }
+    }
+    &-product{
+        &-list{
+            list-style: none;
+            margin-top: 16px;
+        }
+        &-item{
+            font-size: 13px;
+            color: #666;
+            margin: 8px 0;
+        }
+    }
+    &-service{
+        &-list{
+            list-style: none;
+            margin-top: 16px;
+        }
+        &-item{
+            font-size: 13px;
+            color: #666;
+            margin: 8px 0;
+        }
+    }
+    &-info{
+        max-width: 300px;
+        &-content{
+            margin-top: 16px;
+            font-size: 13px;
+            line-height: 20px;
+        }
+    }
+    &-image{
+        &-list{
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 90px 90px ;
+            column-gap : 10px;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
