@@ -43,6 +43,33 @@ body {
   font-family: "Rubik", sans-serif;
   color: #000;
   font-weight: 400;
+  z-index: 1;
+}
+
+.root {
+  position: relative;
+  background-color: #F5F5F5;
+  z-index: 2;
+}
+
+.lightMode {
+  position: fixed;
+  right: 40px;
+  top: 80px;
+  height: 30px;
+  width: 60px;
+  border-radius: 20px;
+  background-color: #000;
+  border: 1px solid #666;
+  z-index: 3;
+}
+.lightMode-circle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
   background-color: #F5F5F5;
 }
 
@@ -133,7 +160,7 @@ button {
   width: 100vw;
   height: 100vh;
   border-radius: 50px 50px 0 100px;
-  z-index: -2;
+  z-index: -1;
   overflow: hidden;
 }
 
@@ -181,6 +208,7 @@ button {
 .header-navbar li a {
   color: #666;
   font-size: 13px;
+  font-weight: bold;
 }
 .header-navbar li.active a {
   color: #fff;
@@ -263,7 +291,7 @@ button {
 .overview .slide-item {
   flex: 1;
   height: 8px;
-  background-color: #666;
+  background-color: #999;
   margin: 0 6px;
   border-radius: 5px;
 }
@@ -285,7 +313,6 @@ button {
 }
 .feature-wrapper {
   width: 100%;
-  flex-wrap: nowrap;
   overflow: hidden;
 }
 .feature-list {
@@ -371,8 +398,11 @@ button {
   position: absolute;
   bottom: 10px;
 }
+.product-item h5 {
+  font-size: 18px;
+}
 .product-item span, .product-item h5 {
-  color: #fff;
+  color: #f5f5f5;
 }
 .product-item.h1 {
   grid-area: h1;
@@ -606,7 +636,7 @@ button {
 }
 .project .slide-item.active {
   flex: 1.6;
-  background-color: #333;
+  background-color: #000;
 }
 
 .media {
@@ -723,6 +753,78 @@ button {
 .footer-image-list img {
   width: 100%;
   object-fit: cover;
+}
+
+body .root.active {
+  background-color: #000 !important;
+}
+body .root.active .background .background_dart {
+  background-color: #F5F5F5;
+}
+body .root.active .background .background_gray {
+  background-color: #fff;
+}
+body .root.active .header {
+  color: #000;
+}
+body .root.active .header-navbar li a {
+  color: #999;
+}
+body .root.active .header-navbar li.active a {
+  color: #000;
+}
+body .root.active .overview-content {
+  color: #000;
+}
+body .root.active .overview-content button a {
+  color: #000;
+}
+body .root.active .overview .slide-item.active {
+  flex: 1.6;
+  background-color: #000;
+}
+body .root.active .product {
+  background-color: #F5F5F5;
+}
+body .root.active .product-title {
+  color: #000;
+}
+body .root.active .service-title {
+  color: #fff;
+}
+body .root.active .service-item {
+  width: 100%;
+  display: flex;
+  background-color: #313131;
+}
+body .root.active .service-content h3, body .root.active .service-content p, body .root.active .service-content button a {
+  color: #fff;
+}
+body .root.active .project-title {
+  color: #fff;
+}
+body .root.active .project .slide-item.active {
+  background-color: #fff;
+}
+body .root.active .project button {
+  color: #fff;
+}
+body .root.active .service2 {
+  background-color: #f5f5f5;
+}
+body .root.active .service2-title {
+  color: #000;
+}
+body .root.active .media-title {
+  color: #fff;
+}
+body .root.active .media-seeAll {
+  margin-top: 40px;
+  background-color: #FFF;
+  color: #000;
+}
+body .root.active .footer {
+  background-color: #313131;
 }
 
 /*# sourceMappingURL=app.css.map */

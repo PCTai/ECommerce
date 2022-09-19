@@ -1,0 +1,87 @@
+body .root.active{
+    background-color: #000  !important;
+    .background{
+        .background_dart{
+            background-color: #F5F5F5;
+        }
+        .background_gray{
+            background-color: #fff
+        }
+    }
+    .header{
+        color: #000;
+        &-navbar li a{
+            color: #999;
+            
+        }
+        &-navbar li.active a{
+            color: #000;
+        }
+    }
+    .overview{
+        &-content{
+            color: #000;
+        }
+        &-content button a{
+            color: #000;
+        }
+        .slide-item.active{
+            flex: 1.6;
+            background-color: #000;
+        }
+    }
+    .product{
+        background-color: #F5F5F5;
+        &-title{
+            color: #000;
+        }
+    }
+    .service{
+        &-title{
+            color: #fff;
+        }
+        &-item{
+            width: 100%;
+            display: flex;
+            background-color: 
+            #313131;
+
+        }
+        &-content{
+            h3, p,  button a{
+                color: #fff; 
+            }
+        }
+    }
+    .project{
+        &-title{
+            color: #fff;
+        }
+        .slide-item.active{
+            background-color: #fff;
+        }
+        button {
+            color: #fff;
+        }
+    }
+    .service2{
+        background-color: #f5f5f5;
+        &-title{
+            color: #000;
+        }
+        
+    }
+    .media{
+        &-title{
+            color: #fff;
+        }
+        &-seeAll{
+            margin-top: 40px;
+            background-color: #FFF;
+            color: #000;
+        }
+    }
+    .footer{
+        background-color: #313131;
+    }
+}

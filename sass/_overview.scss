@@ -1,7 +1,6 @@
 
 .overview{
     margin-top: 80px;
-    
     &-container{
         display: flex;
         align-items: center;
@@ -79,7 +78,7 @@
     .slide-item{
         flex: 1;
         height: 8px;
-        background-color: $desc-color;
+        background-color: #999;
         margin: 0 6px;
         border-radius: 5px;
     }

@@ -3,7 +3,33 @@ body {
     font-family: $font;
     color: $text-color;
     font-weight: 400;
+    z-index: 1;
+  }
+
+  .root{
+    position: relative;
     background-color: #F5F5F5;
+    z-index: 2;
+  }
+  .lightMode{
+    position: fixed;
+    right: 40px;
+    top: 80px;
+    height: 30px;
+    width:  60px;
+    border-radius: 20px;
+    background-color: #000;
+    border: 1px solid #666;
+    &-circle{
+      position: absolute;
+      top: 0;
+      right:  0;
+      width: 30px;
+      height: 30px;
+      border-radius: 20px;
+      background-color: #F5F5F5;
+    }
+    z-index: 3;
   }
   button {
     cursor: pointer;
