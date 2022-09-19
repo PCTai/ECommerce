@@ -76,7 +76,7 @@ window.addEventListener('load', function(){
             "<div class="+"'overview-watch'"+">"+
                 "<img src="+`'${item.imgVideo}'` +">"+
                 "<div class="+"'circle'" +">"+
-                    "<img src="+`'${item.imgPause}'`+"/>"+
+                    "<a href="+"'https://www.youtube.com/watch?v=mIA98anIqIs'"+">" +"<img src="+`'${item.imgPause}'`+"/>" +"</a>"+
                 "</div>"+
             "</div>"
             }
@@ -278,7 +278,7 @@ window.addEventListener('load', function(){
     const lightMode= document.querySelector('.lightMode .lightMode-circle');
     const wrapperLightMode= document.querySelector('.lightMode');
     const activeLightMode= document.querySelector('.root');
-    lightMode.addEventListener('click' , function(){
+    wrapperLightMode.addEventListener('click' , function(){
         activeLightMode.classList.toggle('active');
         if(document.querySelector('.root.active')){
             lightMode.style="right: 0";

@@ -31,11 +31,18 @@ body {
     }
     z-index: 3;
   }
+  img:hover{
+    opacity: 0.7;
+    cursor: pointer;
+  }
   button {
     cursor: pointer;
     outline: none;
     border: none;
     font-family: $font;
+  }
+  button:hover{
+    opacity: 0.7;
   }
   .wrapper {
     max-width: 1440px;
