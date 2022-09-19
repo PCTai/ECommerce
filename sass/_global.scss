@@ -14,6 +14,7 @@ body {
   .wrapper {
     max-width: 1440px;
     margin: 0 auto;
+    overflow: hidden;
   }
   .container {
     max-width: 1170px;
@@ -62,5 +63,17 @@ body {
         filter: blur(54px);
         border-radius: inherit;
       }
+    }
+  }
+  @media (max-width: 1180px){
+    .container {
+      max-width: 956px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    .wrapper {
+      max-width: 1080;
+      margin: 0 auto;
+      overflow: hidden;
     }
   }
