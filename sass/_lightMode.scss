@@ -92,4 +92,19 @@ body .root.active{
     .footer{
         background-color: #313131;
     }
+    .benefit{
+        background-color: #000;
+        .background-insideImage{
+            display: block;
+        }
+        &-content h3{
+            color: #FFF;
+        }
+        &-content button a{
+            color: #000;
+        }
+        &-content button {
+            background-color: #fff;
+        }
+    }
 }
