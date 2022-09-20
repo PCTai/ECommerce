@@ -1,11 +1,12 @@
 
 
 window.addEventListener('load', function(){
+    let buttons= document.querySelectorAll('.button');
 
-    const listProduct= this.document.querySelector(".feature-list");
-    const products= this.document.querySelectorAll(".feature-item");
-    const btnPrev= this.document.querySelector(".feature-btn-prev");
-    const btnNext= this.document.querySelector(".feature-btn-next");
+    const listProduct= document.querySelector(".feature-list");
+    const products= document.querySelectorAll(".feature-item");
+    const btnPrev= document.querySelector(".feature-btn-prev");
+    const btnNext= document.querySelector(".feature-btn-next");
     const lengthProduct= products.length;
     let positionX=0;
     let index=0;
@@ -62,6 +63,7 @@ window.addEventListener('load', function(){
     let currentIndex= 1;
 
     function renderOverViewMain(){
+        
         let html='';
         listOverView.forEach((item, index) =>{
             if(index===start && index<end){
@@ -71,7 +73,7 @@ window.addEventListener('load', function(){
                 "<p>"+
                     `${item.decription}`+
                 "</p>" +
-                "<button class="+"'button button--outline'" +"><a href="+"'#'" +">LEARN MORE</a></button>" +
+                "<button class="+`'button button--outline' ` +"><a href="+"'#'" +">LEARN MORE</a></button>" +
             "</div>" +
             "<div class="+"'overview-watch'"+">"+
                 "<img src="+`'${item.imgVideo}'` +">"+
@@ -82,17 +84,24 @@ window.addEventListener('load', function(){
             }
         })
         overviewMain.innerHTML= html;
+        buttons= document.querySelectorAll('.button');
+        for( let i =0 ;i <buttons.length; i++){
+            buttons[i].addEventListener('click', function(){
+                ShowContent();
+                console.log("click");
+            })
+        }
     }
     renderOverViewMain();
     for(let i= 0; i< overviewPaginations.length; i++){
         overviewPaginations[i].addEventListener('click',function(){
             document.querySelector('.slide-item.active').classList.remove('active');
             currentIndex=i +pageItems;
-            console.log(currentIndex);
             start=i; 
             end= currentIndex;
             overviewPaginations[i].classList.add('active');
             renderOverViewMain();
+            buttons= document.querySelectorAll('.button');
         })
     }
     // autoNext
@@ -292,25 +301,20 @@ window.addEventListener('load', function(){
 
     // handle click button 
 
-    const buttons= this.document.querySelectorAll('.button');
     const wrapperShowInfo= this.document.querySelector('.wrapper-showInfo');
     const layoutShowInfo= this.document.querySelector('.layout-showInfo');
     const layoutShowContent= this.document.querySelector('.layout-showInfo-content');
     const btnHideLayoutShowContent=layoutShowContent.querySelector('button');
-    layoutShowContent.onClick =function(e){
-        e.preventDefault();
-    }
+    layoutShowContent.addEventListener("click",function(e){
+        e.stopImmediatePropagation()
+    }) 
     const hideShowContent= function(){
         layoutShowInfo.style= 'display: none';
     }
     const ShowContent= function(){
         layoutShowInfo.style= 'display: block';
     }
-    for( let i =0 ;i <buttons.length; i++){
-        buttons[i].addEventListener('click', function(){
-            ShowContent();
-        })
-    }
+    
     wrapperShowInfo.addEventListener("click", function(){
         hideShowContent();
     })
