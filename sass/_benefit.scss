@@ -18,8 +18,25 @@
         font-size: 24px;
     }
     &-content p{
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 20px;
+        -webkit-line-clamp: 4;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
         color: $desc-color;
         margin-bottom: 20px;
+        
+    }
+    &-content p p{
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 20px;
+        -webkit-line-clamp: 2 !important;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
     }
     &-content button a{
         color: #fff;
@@ -50,9 +67,17 @@
         border-radius: 50%;
         background-color: rgba($color: rgb(201, 200, 200), $alpha: 0.5); 
     }
-    &-watch .circle img{
+    &-watch .circle a {
+        display: block;
         width: 80px;
         height: 80px;
+        position: absolute;
+        border: none;
+    }
+    &-watch .circle img {
+        width: 80px;
+        height: 80px;
+        display: block;
         position: absolute;
         border: none;
     }

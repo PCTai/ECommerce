@@ -12,7 +12,7 @@
     &-list{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 200px 200px;
+        grid-template-rows: 400px 400px;
         grid-template-areas: 
         "h1 h2 h3" 
         "h1 h4 h4";
@@ -36,15 +36,36 @@
         border-radius: 10px;
     }
     &-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        width: 100%;
         position: absolute;
-        bottom: 10px;
+        height:  100px;
+        bottom: 0;
+        background: linear-gradient(180deg, rgba(17, 16, 16, 0) 0%, rgba(17, 16, 16, 0.74) 72.92%);
+        backdrop-filter: blur(1.5px);
+
+        border-radius: 0px 0px 10px 10px;
+        span,h5{
+            position: relative;
+            bottom: 20px;
+        }
+
+    
     }
     &-item h5{
         font-size: 18px;
+        
     }
     &-item span,
     &-item  h5{
         color: #f5f5f5;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap; 
+        text-overflow: ellipsis;
+        padding: 0 20px;
 
     }
     &-item.h1{

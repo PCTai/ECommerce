@@ -29,7 +29,7 @@
     &-item img{
 
         width: 50%;
-        height: 320px;
+        height: 100%;
         object-fit: cover;
         border-radius: 10px;
     }
@@ -43,10 +43,21 @@
         padding-left: 60px;
     }
     &-content h3{
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap; 
+        text-overflow: ellipsis;
         margin-bottom: 20px ;
         font-size: 24px;
     }
     &-content p{
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 20px;
+        -webkit-line-clamp: 4;
+        display: -webkit-box;
+        height: 100px;
         color: $desc-color;
         margin-bottom: 20px;
     }
@@ -57,3 +68,11 @@
         max-width: 200px;
     }
 }
+@media (min-width: 1580px){
+    .service{
+        &-item{
+            height:  400px;
+        }
+    }
+
+  }

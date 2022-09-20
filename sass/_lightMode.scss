@@ -17,6 +17,9 @@ body .root.active{
         &-navbar li.active a{
             color: #000;
         }
+        &-logo{
+            color: #000;
+        }
     }
     .overview{
         &-content{
@@ -28,6 +31,11 @@ body .root.active{
         .slide-item.active{
             flex: 1.6;
             background-color: #000;
+        }
+    }
+    .feature{
+        &-title{
+            color: #fff;
         }
     }
     .product{

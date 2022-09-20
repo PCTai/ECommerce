@@ -27,7 +27,7 @@ window.addEventListener('load', function(){
     const listOverView= [
         {
             id :1,
-            title: ">New generation ceramic tile",
+            title: ">New generation ceramic tile Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsam hic totam ex?",
             decription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsam hic totam ex? Laborum deleniti eligendi rem velit error architecto vel nemo soluta! Harum eaque beatae quis officiis exercitationem assumenda.",
             imgVideo: "./images//video.png",
             imgPause: "./images//pause.png",
@@ -76,7 +76,7 @@ window.addEventListener('load', function(){
             "<div class="+"'overview-watch'"+">"+
                 "<img src="+`'${item.imgVideo}'` +">"+
                 "<div class="+"'circle'" +">"+
-                    "<a href="+"'https://www.youtube.com/watch?v=mIA98anIqIs'"+">" +"<img src="+`'${item.imgPause}'`+"/>" +"</a>"+
+                    "<a target="+"'_blank'"+ "href="+"'https://www.youtube.com/watch?v=mIA98anIqIs'"+">" +"<img src="+`'${item.imgPause}'`+"/>" +"</a>"+
                 "</div>"+
             "</div>"
             }
@@ -164,7 +164,7 @@ window.addEventListener('load', function(){
     const listProjects=[
         {
             id: 1,
-            title: "Bedroom Tiles",
+            title: "Bedroom Tiles Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             decription:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             image: "./images/product1.png"
         },
@@ -238,7 +238,7 @@ window.addEventListener('load', function(){
 
     const projectMain= this.document.querySelector('.project-list');
     const projectPaginations= this.document.querySelectorAll('.project-slide .slide-item');
-    const ProjectPageItem =8;
+    const ProjectPageItem =6;
     let projectStart= 0;
     let projectEnd=ProjectPageItem; 
     let projectCurrentIndex= 1;
@@ -289,5 +289,34 @@ window.addEventListener('load', function(){
         
         
     })
+
+    // handle click button 
+
+    const buttons= this.document.querySelectorAll('.button');
+    const wrapperShowInfo= this.document.querySelector('.wrapper-showInfo');
+    const layoutShowInfo= this.document.querySelector('.layout-showInfo');
+    const layoutShowContent= this.document.querySelector('.layout-showInfo-content');
+    const btnHideLayoutShowContent=layoutShowContent.querySelector('button');
+    layoutShowContent.onClick =function(e){
+        e.preventDefault();
+    }
+    const hideShowContent= function(){
+        layoutShowInfo.style= 'display: none';
+    }
+    const ShowContent= function(){
+        layoutShowInfo.style= 'display: block';
+    }
+    for( let i =0 ;i <buttons.length; i++){
+        buttons[i].addEventListener('click', function(){
+            ShowContent();
+        })
+    }
+    wrapperShowInfo.addEventListener("click", function(){
+        hideShowContent();
+    })
+    btnHideLayoutShowContent.addEventListener("click", function(){
+        hideShowContent();
+    })
+    
 
 })

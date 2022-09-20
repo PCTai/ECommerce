@@ -25,12 +25,23 @@
         animation: showContent 1s linear;
     }
     &-content h3{
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap; 
+        text-overflow: ellipsis;
         margin-bottom: 20px ;
         font-size: 24px;
     }
     &-content p{
         color: $desc-color;
         margin-bottom: 20px;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 20px;
+        -webkit-line-clamp: 3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
     }
     &-content button a{
         color: #fff;
@@ -78,7 +89,7 @@
     }
 
     &-slide{
-        margin-top: 120px;
+        margin-top: 80px;
         display: flex;
         justify-content: center;
     }
