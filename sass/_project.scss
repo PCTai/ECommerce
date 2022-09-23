@@ -13,14 +13,15 @@
     &-list{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 200px 200px;
-        gap: 20px;
+        grid-template-rows: 250px 250px;
+        gap: 30px;
         box-sizing: border-box;
 
     }
     &-title{
         margin-bottom: 40px;
-        font-size: 24px;
+        font-size: 48px;
+        font-weight: 700;
         color: #000;
     }
     &-item{
@@ -52,9 +53,11 @@
             overflow: hidden;
             white-space: nowrap; 
             text-overflow: ellipsis;
-            font-size: 18px;
+            font-size: 24px;
+            font-weight: 600;
         }
         span{
+            font-size: 16px;
             width: 100%;
             overflow: hidden;
             white-space: nowrap;

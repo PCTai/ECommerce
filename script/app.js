@@ -18,7 +18,7 @@ window.addEventListener('load', function(){
     const headerNavbar=this.document.querySelector('.header-navbar');
     const headerDropdown=this.document.querySelector('.header-dropdown');
     const lengthListNavbar= listNavbars.length;
-    if(lengthListNavbar>=7){
+    if(lengthListNavbar>7){
         headerDropdown.style= 'display: block';
         headerNavbar.style= 'display: none';
     }else{
@@ -38,29 +38,29 @@ window.addEventListener('load', function(){
     const listOverView= [
         {
             id :1,
-            title: ">New generation ceramic tile Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsam hic totam ex?",
-            decription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsam hic totam ex? Laborum deleniti eligendi rem velit error architecto vel nemo soluta! Harum eaque beatae quis officiis exercitationem assumenda.",
+            title: ">New generation ceramic tile ",
+            decription: "Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend aptent dapibus metus maecenas consequat. Elementum interdum a semper. Netus nullam eros nisi volutpat nibh ex ultricies. Pharetra sagittis sit aliquet at. Magna nam platea justo.",
             imgVideo: "./images//video.png",
             imgPause: "./images//pause.png",
         },
         {
             id :2,
             title: "> 2 New generation ceramic tile",
-            decription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsam hic totam ex? Laborum deleniti eligendi rem velit error architecto vel nemo soluta! Harum eaque beatae quis officiis exercitationem assumenda.",
+            decription: "Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend aptent dapibus metus maecenas consequat. Elementum interdum a semper. Netus nullam eros nisi volutpat nibh ex ultricies. Pharetra sagittis sit aliquet at. Magna nam platea justo.",
             imgVideo: "./images//video.png",
             imgPause: "./images//pause.png",
         },
         {
             id :3,
             title: ">3 New generation ceramic tile",
-            decription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsam hic totam ex? Laborum deleniti eligendi rem velit error architecto vel nemo soluta! Harum eaque beatae quis officiis exercitationem assumenda.",
+            decription: "Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend aptent dapibus metus maecenas consequat. Elementum interdum a semper. Netus nullam eros nisi volutpat nibh ex ultricies. Pharetra sagittis sit aliquet at. Magna nam platea justo.",
             imgVideo: "./images//video.png",
             imgPause: "./images//pause.png",
         },
         {
             id :4,
             title: ">4 New generation ceramic tile",
-            decription: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsam hic totam ex? Laborum deleniti eligendi rem velit error architecto vel nemo soluta! Harum eaque beatae quis officiis exercitationem assumenda.",
+            decription: "Penatibus sem vitae mollis luctus mi tellus. Maximus eu eleifend aptent dapibus metus maecenas consequat. Elementum interdum a semper. Netus nullam eros nisi volutpat nibh ex ultricies. Pharetra sagittis sit aliquet at. Magna nam platea justo.",
             imgVideo: "./images//video.png",
             imgPause: "./images//pause.png",
         }
@@ -183,74 +183,74 @@ window.addEventListener('load', function(){
     const listProjects=[
         {
             id: 1,
-            title: "Bedroom Tiles Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-            decription:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-            image: "./images/product1.png"
+            title: "Aenean habitasse",
+            decription:"Riyadh, Saudi Arabia",
+            image: "./images/prj1.png"
         },
         {
             id: 2,
-            title: "2 Bedroom Tiles",
-            decription:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-            image: "./images/pr2.png"
+            title: "Aenean Tempus ipsum",
+            decription:"Riyadh, Saudi Arabia",
+            image: "./images/prj2.png"
         },
         {
             id: 3,
-            title: "3 Bedroom Tiles",
-            decription:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-            image: "./images/pr3.png"
+            title: "Riyadh, Saudi Arabia",
+            decription:"Riyadh, Saudi Arabia",
+            image: "./images/prj3.png"
         },
         {
             id: 4,
-            title: "4 Bedroom Tiles",
-            decription:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            title: "Aenean habitasse",
+            decription:"Riyadh, Saudi Arabia",
             image: "./images/pr4.png"
         },
         {
             id: 5,
-            title: "5 Bedroom Tiles",
-            decription:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-            image: "./images/product1.png"
+            title: "Aenean habitasse",
+            decription:"Riyadh, Saudi Arabia",
+            image: "./images/pr5.png"
         },
         {
             id: 6,
-            title: "6 Bedroom Tiles",
-            decription:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-            image: "./images/pr2.png"
+            title: "6 Aenean habitasse",
+            decription:"Riyadh, Saudi Arabia",
+            image: "./images/pr6.png"
         },
         {
             id: 7,
-            title: "7 Bedroom Tiles",
-            decription:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            title: "7 Aenean habitasse",
+            decription:"Riyadh, Saudi Arabia",
             image: "./images/pr3.png"
         },
         {
             id: 8,
-            title: "8 Bedroom Tiles",
-            decription:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            title: "8 Aenean habitasse",
+            decription:"Riyadh, Saudi Arabia",
             image: "./images/pr4.png"
         },
         {
             id: 9,
-            title: "9 Bedroom Tiles",
-            decription:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            title: "9 Aenean habitasse",
+            decription:"Riyadh, Saudi Arabia",
             image: "./images/product1.png"
         },
         {
             id: 10,
-            title: "10 Bedroom Tiles",
-            decription:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            title: "10 Aenean habitasse",
+            decription:"Riyadh, Saudi Arabia",
             image: "./images/pr2.png"
         },
         {
             id: 11,
-            title: "11 Bedroom Tiles",
-            decription:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            title: "11 Aenean habitasse",
+            decription:"Riyadh, Saudi Arabia",
             image: "./images/pr3.png"
         },
         {
             id: 12,
-            title: "12 Bedroom Tiles",
-            decription:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            title: "12 Aenean habitasse",
+            decription:"Riyadh, Saudi Arabia",
             image: "./images/product1.png"
         }
     ]

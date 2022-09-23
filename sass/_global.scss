@@ -1,11 +1,29 @@
+@font-face {
+  font-family: Proxima Nova;
+  src: url("../fonts/Proxima-Nova-Bold.woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: Proxima Nova;
+  src: url("../fonts/Proxima-Nova-Regular.woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Proxima Nova;
+  src: url("../fonts/ProximaNova-Semibold.woff2");
+  font-weight: 600;
+}
+
+
 html{
+  
   scroll-behavior: smooth;
   animation: color 1s linear;
   animation: colorBackground 1s linear;
 }
 body {
     line-height: 1;
-    font-family: $font;
+    font-family: "Proxima Nova", sans-serif;
     color: $text-color;
     font-weight: 400;
     z-index: 1;
@@ -37,7 +55,7 @@ body {
     z-index: 3;
   }
   img:hover{
-    opacity: 0.7;
+    opacity: 0.9;
     cursor: pointer;
   }
   .layout-showInfo{
@@ -98,7 +116,9 @@ body {
     margin: 0 auto;
     padding: 0 15px;
   }
-  
+  .button a{
+    font-weight: 700;
+  }
   .button {
     display: inline-block;
     padding: 13px 30px;
@@ -106,6 +126,7 @@ body {
     font-family: $font;
     line-height: 1;
     font-size: 16px;
+    font-weight: 700;
     cursor: pointer;
     border: none;
     outline: none;
@@ -119,7 +140,7 @@ body {
     &--outline {
       background-color: transparent;
       color: $primary-color;
-      font-weight: 500;
+      font-weight: 600;
       border: 2px solid $desc-color;
     }
     &--rounded {

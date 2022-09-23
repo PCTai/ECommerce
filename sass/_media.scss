@@ -21,7 +21,8 @@
     }
     &-title{
         margin-bottom: 40px;
-        font-size: 24px;
+        font-size: 48px;
+        font-weight: 700;
     }
     &-item.active
     {
@@ -43,7 +44,8 @@
             margin-bottom: 16px;
         }
         &-content h3{
-            font-size: 16px;
+            font-size: 18px;
+            font-weight: 600;
             margin-bottom: 16px;
             width: 100%;
             overflow: hidden;
@@ -54,7 +56,7 @@
             -webkit-box-orient: vertical;
             }
         &-content span{
-            font-size: 13px;
+            font-size: 14px;
             width: 100%;
             overflow: hidden;
             text-overflow: ellipsis;

@@ -30,18 +30,21 @@
         white-space: nowrap; 
         text-overflow: ellipsis;
         margin-bottom: 20px ;
-        font-size: 24px;
+        font-size: 48px;
+        font-weight: 700;
     }
     &-content p{
+        font-size: 20px;
         color: $desc-color;
         margin-bottom: 20px;
         width: 100%;
         overflow: hidden;
         text-overflow: ellipsis;
         line-height: 20px;
-        -webkit-line-clamp: 3;
+        -webkit-line-clamp: 4;
         display: -webkit-box;
         -webkit-box-orient: vertical;
+        font-weight: 400;
     }
     &-content button a{
         color: #fff;

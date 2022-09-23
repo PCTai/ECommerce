@@ -11,14 +11,15 @@
     &-list{
         display: grid;
         grid-template-columns:  1fr 1fr 1fr;
-        grid-template-rows: 200px 200px;
-        gap: 20px;
+        grid-template-rows: 250px 250px;
+        gap: 30px;
         box-sizing: border-box;
 
     }
     &-title{
         margin-bottom: 40px;
-        font-size: 24px;
+        font-size: 48px;
+        font-weight: 700;
     }
     &-item{
         text-align: center;
@@ -39,8 +40,9 @@
             border-radius: 0px 0px 10px 10px;
             h5{
                 position: relative;
-                bottom: 10px;
-                font-size: 18px;
+                bottom: 20px;
+                font-size: 24px;
+                font-weight: 600;
                 width: 100%;
                 overflow: hidden;
                 white-space: nowrap;

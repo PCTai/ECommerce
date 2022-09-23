@@ -22,8 +22,9 @@
     }
     &-title{
         margin-bottom: 40px;
-        font-size: 24px;
+        font-size: 48px;
         color: #fff;
+        font-weight: 700;
     }
     &-item{
         text-align: center;
@@ -55,8 +56,14 @@
     
     }
     &-item h5{
-        font-size: 18px;
+        margin-bottom: 10px;
+        font-size: 24px;
+        font-weight: 600;
         
+    }
+    &-item span{
+        font-size: 16px;
+        font-weight: 400;
     }
     &-item span,
     &-item  h5{
