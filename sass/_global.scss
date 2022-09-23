@@ -1,5 +1,7 @@
 html{
   scroll-behavior: smooth;
+  animation: color 1s linear;
+  animation: colorBackground 1s linear;
 }
 body {
     line-height: 1;

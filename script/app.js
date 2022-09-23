@@ -13,8 +13,18 @@ window.addEventListener('load', function(){
     let productItemWidth= products[0].offsetWidth +24;
 
     // navbvar
+
     const listNavbars= this.document.querySelectorAll(".header-navbar li");
+    const headerNavbar=this.document.querySelector('.header-navbar');
+    const headerDropdown=this.document.querySelector('.header-dropdown');
     const lengthListNavbar= listNavbars.length;
+    if(lengthListNavbar>=7){
+        headerDropdown.style= 'display: block';
+        headerNavbar.style= 'display: none';
+    }else{
+        headerDropdown.style= 'display: none';
+        headerNavbar.style= 'display: block';
+    }
     
     for(let i=0; i< lengthListNavbar; i++){
         listNavbars[i].onclick= function(){
