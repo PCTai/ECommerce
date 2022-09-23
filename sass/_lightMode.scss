@@ -106,5 +106,9 @@ body .root.active{
         &-content button {
             background-color: #fff;
         }
+        &-list{
+            line-height: 30px;
+            color: #aeaeae;
+        }
     }
 }
